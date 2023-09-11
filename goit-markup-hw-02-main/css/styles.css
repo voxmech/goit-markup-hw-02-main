@@ -7,7 +7,10 @@
     --logo-blue:#4D5AE5;
     --logo-black:#2E2F42;
     --text-white-opacity:  rgba(255,255,255,0.6);
-    --button-primary-hover: #188ce8; 
+    --text-primary-white: #ffff;
+    --button-primary-hover: #188ce8;
+    --button-portfolio-normal: #E7E9FC;
+    --button-portfolio-hover: #404BBF;
     --primary-hover-color:  #4D5AE5; 
     --button-filter: #fff;
     --background-black: #2f303a; 
@@ -18,16 +21,16 @@
 
 body {
     
-    text-decoration-line: none;
     list-style: none;
     color: var(--primary-black-color);
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     
 }
 
 .logo {
 
-    text-decoration-line: none;
+    text-decoration: none;
     list-style: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -41,6 +44,10 @@ body {
     color:var(--logo-blue)
 }
 
+ul li a {
+
+    text-decoration: none;
+}
 
 .header-ctas {
 
@@ -49,8 +56,14 @@ body {
 
 .header-navigator-item {
 
-    
     list-style: none;
+}
+
+
+
+.header-navigator-menu {
+
+    text-decoration-line: none;
 }
 
 .features-items {
@@ -86,11 +99,31 @@ body {
     color: var(--primary-hover-color)
 }
 
+.button-item {
+
+    background-color: var(--button-portfolio-normal);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+}
+.button-item:hover {
+    color: var(--button-filter);
+    background-color: var(--button-portfolio-hover);
+    cursor: pointer;
+}
+
 
 .order-service {
-    
     color: var(--button-filter);
-    background-color: var(--primary-hover-color) ;
+    background-color: var(--primary-hover-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+
+.order-service:hover {
+    color: var(--button-filter);
+    background-color: var(--button-portfolio-hover);
     border-radius: 0%;
     border-color: none;
     cursor: pointer;
@@ -98,8 +131,8 @@ body {
 
 .hero {
 
-    color: white;
-    background-color: #2E2F42;
+    color: var(--text-primary-white);
+    background-color: var(--hero-background);
     margin: 0;
     
 }
@@ -108,7 +141,4 @@ body {
     font-weight: 500;
 }
 
-.images-menu {
 
-    font-weight: 400;
-}
